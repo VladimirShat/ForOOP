@@ -1,16 +1,18 @@
-data = input('напишите уравнение вида: a * x^2 +/- b * x +/- c')
+data = input('напишите уравнение вида: a * x^2 +/-b * x +/-c')
 
 f,s,t = 0,1,2
 if data[0] == '-':
     f,s,t = 1,2,3
+
 data = data.replace('-', '+-')
 k = data.split('+')
 k = [k[f].split('*'),
        k[s].split('*'),
        k[t].split('*')]
-print(k)
 
 a,b,c = float(k[0][0]), float(k[1][0]), float(k[2][0])
+print(a,b,c)
+
 d = b*b - 4 * a * c
 
 if d > 0:
