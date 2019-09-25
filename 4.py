@@ -1,9 +1,9 @@
-data = input('напишите уравнение вида: a * x^2 +/-b * x +/-c')
+data = input('напишите уравнение вида: a * x^2 +/- b * x +/- c: ')
 
 f,s,t = 0,1,2
 if data[0] == '-':
     f,s,t = 1,2,3
-
+data = ''.join(data.split(' '))
 data = data.replace('-', '+-')
 k = data.split('+')
 k = [k[f].split('*'),
