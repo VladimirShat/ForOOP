@@ -1,0 +1,15 @@
+import pyowm
+
+owm = pyowm.OWM('3ddc39746cf60ea08ec5a0e30fe87856', language = "ru")
+
+place = input("Город: ")
+
+observation = owm.weather_at_place(place)
+w = observation.get_weather()
+
+temp = w.get_temperature('celsius')["temp"]
+
+print("В городе " + place + " сейчас " + w.get_detailed_status())
+print("Температура сейчас в районе " + str(temp))
+
+input()
