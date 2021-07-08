@@ -1,4 +1,4 @@
-s = 'Привет,,, мама!!!'
+s = 'Hello,,, world!!!'
 l = list(s)
 i = 0
 for char in l:
