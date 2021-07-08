@@ -1,4 +1,4 @@
-data = input('напишите уравнение вида: a * x^2 +/- b * x +/- c: ')
+data = input('write an equation of the form: a * x^2 +/- b * x +/- c: ')
 
 f,s,t = 0,1,2
 if data[0] == '-':
